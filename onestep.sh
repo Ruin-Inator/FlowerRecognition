@@ -32,7 +32,7 @@ firewall-cmd --zone=public --permanent --add-service=https
 
 firewall-cmd --zone=public --permanent --add-port=81/tcp
 
-firewall-cmd --zone=public --permanent --add-port=8000/tcp
+firewall-cmd --zone=public --permanent --add-port=8100/tcp
 
 firewall-cmd --reload
 
