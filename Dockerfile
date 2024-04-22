@@ -6,6 +6,6 @@ COPY ./app /app
 
 RUN pip install -r requirements.txt
 
-EXPOSE 8000
+EXPOSE 8100
 
 Run python server.py
