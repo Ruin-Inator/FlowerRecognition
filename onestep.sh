@@ -32,6 +32,12 @@ git clone https://github.com/Ruin-Inator/FlowerRecognition.git
 
 cd FlowerRecognition
 
+# 配置防火墙
+
+firewall-cmd --zone=public --permanent --add-port=8000/tcp
+
+firewall-cmd --reload
+
 # 启动项目
 
 docker-compose up -d
