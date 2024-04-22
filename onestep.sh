@@ -26,6 +26,10 @@ docker-compose version
 
 # 配置防火墙
 
+firewall-cmd --zone=public --permanent --add-service=http
+
+firewall-cmd --zone=public --permanent --add-service=https
+
 firewall-cmd --zone=public --permanent --add-port=81/tcp
 
 firewall-cmd --zone=public --permanent --add-port=8000/tcp
@@ -35,5 +39,3 @@ firewall-cmd --reload
 # 启动项目
 
 docker-compose up -d
-
-
