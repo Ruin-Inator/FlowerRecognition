@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     image: flower-recognition:1.0.0   # 指定构建完成的镜像名和标签
     ports:
-      - "8100:8100"
+      - "8000:8000"
 
   nginx-proxy-manager:
     image: 'jc21/nginx-proxy-manager:latest'

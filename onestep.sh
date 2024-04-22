@@ -24,18 +24,16 @@ docker version
 
 docker-compose version
 
-# 配置防火墙
+# 安装项目本体
 
-firewall-cmd --zone=public --permanent --add-service=http
+yum install git
 
-firewall-cmd --zone=public --permanent --add-service=https
+git clone https://github.com/Ruin-Inator/FlowerRecognition.git
 
-firewall-cmd --zone=public --permanent --add-port=81/tcp
-
-firewall-cmd --zone=public --permanent --add-port=8100/tcp
-
-firewall-cmd --reload
+cd FlowerRecognition
 
 # 启动项目
 
 docker-compose up -d
+
+
