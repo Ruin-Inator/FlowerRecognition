@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+
+  flower-recognition:
+    build:
+      context: .   
+      dockerfile: Dockerfile
+    image: flower-recognition:1.0.0   # 指定构建完成的镜像名和标签
+    ports:
+      - "8000:8000"
+
+  nginx-proxy-manager:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    volumes:
+      - ./docker/nginx-proxy-manager/data:/data
+      - ./docker/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
