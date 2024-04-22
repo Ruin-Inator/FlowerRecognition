@@ -52,7 +52,7 @@ def flower_recog(filepath):
         result = np.argmax(final)
 
     # 获取标签值
-    processed_images=np.load(os.path.join(os.path.dirname(__file__), PROCESSED_IMAGES))
+    processed_images = np.load(os.path.join(os.path.dirname(__file__), PROCESSED_IMAGES), allow_pickle=True)
     labels=processed_images[6]
     return labels[result]
 
