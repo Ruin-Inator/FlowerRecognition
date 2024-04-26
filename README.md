@@ -14,7 +14,7 @@
 
 ## 安装项目(5分钟)
 ```
-yum install git
+yum install -y git 
 
 git clone https://github.com/Ruin-Inator/FlowerRecognition.git
 
