@@ -3,14 +3,11 @@
 # 购买云服务器(10分钟)
 
 1. 选择腾讯云(不过本人使用的是Vultr)
-2. 购买虚拟云服务器，区域选择新加坡(配置环境省心，日本没有试过)
-3. 选择最低配置就行，系统选择CentOS 7
-4. 防火墙打开8100端口，比如阿里云，在阿里云对应虚拟机的安全组里面打开8100端口，协议tcp，授权对象为"0.0.0.0"，实在不会可以google查一下
-5. 用网页端的命令行窗口就行了，就是点击"远程连接"按钮，探索看看进入网页命令行
-6. 输入用户名login: root 然后密码password: (查看你的服务器密码)
-7. 开始部署
-
-**注意：阿里云网络环境不稳定，要使用腾讯云**
+2. 购买虚拟云服务器，选择最低配置就行，系统选择CentOS 7
+3. 防火墙打开8100端口，比如阿里云，在阿里云对应虚拟机的安全组里面打开8100端口，协议tcp，授权对象为"0.0.0.0"，实在不会可以google查一下
+4. 用网页端的命令行窗口就行了，就是点击"远程连接"按钮，探索看看进入网页命令行
+5. 输入用户名login: root 然后密码password: (查看你的服务器密码)
+6. 开始部署
 
 # 部署项目
 
@@ -18,7 +15,9 @@
 ```
 yum install -y git 
 
-git clone https://github.com/Ruin-Inator/FlowerRecognition.git
+git clone https://github.com/Ruin-Inator/FlowerRecognition.git # 海外服务器用这个
+
+git clone https://gitclone.com/github.com/Ruin-Inator/FlowerRecognition.git # 阿里云和腾讯云等国内服务器用这个
 
 cd FlowerRecognition
 ```
